@@ -49,8 +49,9 @@ Clone the repository and start building your next project with ease.
 git clone https://github.com/ace1group/snac.git
 cd snac-template
 composer install
-npm install && npm run dev
+npm install
 php artisan migrate
+cp .env.example .env
 ```
 
 ## Launch server
@@ -59,5 +60,5 @@ php artisan migrate
 composer run dev
 ```
 
----
+----
 Supported by [WebSnac](https://websnac.com)
