@@ -50,7 +50,7 @@ git clone https://github.com/ace1group/snac.git
 cd snac-template
 composer install
 npm install
-php artisan migrate
+php artisan migrate --seed
 cp .env.example .env
 ```
 
