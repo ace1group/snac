@@ -13,6 +13,7 @@
         "intervention/image": "^3.10",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.9",
+        "league/flysystem-aws-s3-v3": "^3.29",
         "spatie/laravel-honeypot": "^4.5",
         "spatie/laravel-medialibrary": "^11.11",
         "spatie/laravel-sitemap": "^7.3"
@@ -58,7 +59,7 @@
         ],
         "dev": [
             "Composer\\Config::disableProcessTimeout",
-            "npx concurrently -c \"#93c5fd,#c4b5fd,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"npm run dev\" \"mailpit\" --names='server,queue,vite'"
+            "npx concurrently -c \"#93c5fd,#c4b5fd,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"npm run dev\" \"mailpit\" \"minio server ./database/minio\" --names='server,queue,vite,minio'"
         ]
     },
     "extra": {
