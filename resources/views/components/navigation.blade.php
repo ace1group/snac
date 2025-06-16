@@ -40,6 +40,7 @@
 
       <div class="hidden lg:ml-6 lg:flex lg:space-x-8">
         <x-nav.link href="{{ route('home') }}" is-current="{{ Route::is('home') }}">Home</x-nav.link>
+        <x-nav.link href="{{ route('products') }}" is-current="{{ Route::is('products') }}">Products</x-nav.link>
         <x-nav.link href="{{ route('services') }}" is-current="{{ Route::is('services') }}">Services</x-nav.link>
         <x-nav.link href="{{ route('reviews') }}" is-current="{{ Route::is('reviews') }}">Reviews</x-nav.link>
         <x-nav.link href="{{ route('contact') }}" is-current="{{ Route::is('contact') }}">Contact Us</x-nav.link>
@@ -103,6 +104,7 @@
   <div class="lg:hidden" x-show="mobile" x-cloak>
     <div class="space-y-1 pb-4 pt-2">
       <x-nav.mobile href="{{ route('home') }}" is-current="{{ Route::is('home') }}">Home</x-nav.mobile>
+      <x-nav.mobile href="{{ route('products') }}" is-current="{{ Route::is('products') }}">Products</x-nav.mobile>
       <x-nav.mobile href="{{ route('services') }}" is-current="{{ Route::is('services') }}">Services</x-nav.mobile>
       <x-nav.mobile href="{{ route('reviews') }}" is-current="{{ Route::is('reviews') }}">Reviews</x-nav.mobile>
       <x-nav.mobile href="{{ route('contact') }}" is-current="{{ Route::is('contact') }}">Contact Us</x-nav.mobile>
